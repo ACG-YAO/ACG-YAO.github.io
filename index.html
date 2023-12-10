@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Eve of Eternity: Jack's Redemption</title>
-		<style>
-			body { margin: 0; }
-		</style>
-		<script type="module" crossorigin src="/assets/index-czAY-Vd5.js"></script>
-	</head>
-	<body>
-	</body>
+<head>
+	<meta charset="utf-8">
+	<title>Eve of Eternity: Jack's Redemption</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif; /* Example font */
+		}
+
+		#game, #time {
+			position: absolute;
+			top: 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			padding: 10px;
+			border-radius: 5px;
+			font-size: 24px;
+		}
+
+		#game {
+			left: 10px;
+		}
+
+		#time {
+			right: 10px;
+		}
+	</style>
+  <script type="module" crossorigin src="/assets/index-m5rXGrJE.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-1lYtlt2n.css">
+</head>
+<body>
+	<div id="reward-indicator" class="reward-container">
+		<div class="fireworks"></div>
+		<div class="reward-message">Score++</div>
+	</div>
+	<div id="lose-indicator" class="overlay">
+		<img src="/assets/loseimage-TuOMJC7u.jpg" alt="Game Over" class="game-over-image" />
+	</div>
+	<p id='game'><span id='text'>Score</span> <span id='score'>0</span></p>
+	<p id='time'><span id='time-text'>Time</span> <span id='game-time'>00:00</span></p>
+</body>
 </html>
